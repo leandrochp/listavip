@@ -1,2 +1,4 @@
 *.class
 /target/classes/
+/target/classes/META-INF/
+/target/maven-archiver/
