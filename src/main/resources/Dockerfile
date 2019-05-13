@@ -1,7 +1,5 @@
 # Derived from official mysql image (our base image)
 FROM mysql
-# Source to create this file
-# https://medium.com/@lvthillo/customize-your-mysql-database-in-docker-723ffd59d8fb
 
 # Add a database
 ENV MYSQL_DATABASE listavip
