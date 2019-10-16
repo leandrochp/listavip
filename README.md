@@ -1,18 +1,18 @@
 # Lista Vip
 
-## Projeto Aula em construção
+## Create your Docker image:
+**On directory src/main/resource:** 
+docker build -t *your_image_name* .
+**And start your MySQL container from the image:**
+docker run -d -p 3306:3306 --name *your_container_name* *your_image_name*
 
-### Create your Docker image:
-<p>docker build -t *image name* .</p>
-<p>And start your MySQL container from the image:</p>
-<p>docker run -d -p 3306:3306 --name *image name* *image name*
-<p>Now we can verify. We will exec inside the container:</p>
-### Exec image
-<p>docker exec -it *image name* bash</p>
-<p>root@c86ff80d7524:/# mysql -uroot -p</p>
-Enter password: (root)
-### Commands line mysql
-> show databases;
-> use *database name*;
-> show tables;
-> show columns from *table name*;
+**Now we can verify. We will exec inside the container:**
+docker exec -it *your_container_name* bash
+root@c86ff80d7524:/# mysql -uroot -p
+Enter password: **root**
+
+**Commands line mysql**
+`show databases;`
+`use listavip;`
+`show tables;`
+`show columns from convidado;`
